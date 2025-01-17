@@ -68,8 +68,8 @@ def create_test_input():
               "type": "document_ai",
               "config": {
                   "project_id": "abhishekbhgwt-llm",
-                  "location": "us",
-                  "processor_name": "projects/360429251832/locations/us/processors/4ad5818534023450",
+                  "location": "eu",
+                  "processor_name": "projects/360429251832/locations/eu/processors/4ad5818534023450",
                   "gcs_output_path": "gs://rag_pg_test_bucket/output",
               },
           },

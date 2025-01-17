@@ -124,7 +124,7 @@ The pipeline consumes messages from Pub/Sub with the following schema:
       "type":"document_ai",
       "config":{
          "project_id":"",
-         "location":"us",
+         "location":"eu",
          "processor_name":"",
          "gcs_output_path":""
       }

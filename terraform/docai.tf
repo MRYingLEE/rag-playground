@@ -13,7 +13,7 @@
 # limitations under the License.
 
 resource "google_document_ai_processor" "layout_parser_processor" {
-  location     = "us"
+  location     = "eu"
   display_name = "layout-parser-processor"
   type         = "LAYOUT_PARSER_PROCESSOR"
 }

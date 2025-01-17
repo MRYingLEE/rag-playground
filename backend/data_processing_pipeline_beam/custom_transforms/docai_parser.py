@@ -83,8 +83,8 @@ class DocAIParser(BaseBlobParser):
       raise ValueError(
           f"Processor name {processor_name} has the wrong format. If your"
           " prediction endpoint looks like"
-          " https://us-documentai.googleapis.com/v1/projects/PROJECT_ID/locations/us/processors/PROCESSOR_ID:process,"
-          " use only projects/PROJECT_ID/locations/us/processors/PROCESSOR_ID"
+          " https://eu-documentai.googleapis.com/v1/projects/PROJECT_ID/locations/eu/processors/PROCESSOR_ID:process,"
+          " use only projects/PROJECT_ID/locations/eu/processors/PROCESSOR_ID"
           " part."
       )
 

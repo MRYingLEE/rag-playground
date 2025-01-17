@@ -67,8 +67,8 @@ Dataflow Template for large scale RAG document processing
             "type": "document_ai",
             "config": {
                 "project_id": "PROJECT_ID",
-                "location": "us",
-                "processor_name": "projects/PROJECT_NUMBER/locations/us/processors/PROCESSOR_ID",
+                "location": "eu",
+                "processor_name": "projects/PROJECT_NUMBER/locations/eu/processors/PROCESSOR_ID",
                 "gcs_output_path": "gs://BUCKET_NAME/output",
             },
         },
@@ -104,8 +104,8 @@ Dataflow Template for large scale RAG document processing
         "type": "document_ai",
         "config": {
             "project_id": "PROJECT_ID",
-            "location": "us",
-            "processor_name": "projects/PROJECT_NUMBER/locations/us/processors/PROCESSOR_ID",
+            "location": "eu",
+            "processor_name": "projects/PROJECT_NUMBER/locations/eu/processors/PROCESSOR_ID",
             "gcs_output_path": "gs://BUCKET_NAME/output",
         },
     },
