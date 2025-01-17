@@ -32,10 +32,10 @@ main:
                   try:
                     call: http.post
                     args:
-                      url: https://us-central1-abhi-test-new-rp.cloudfunctions.net/answer_generation_service
+                      url: https://europe-west2-abhi-test-new-rp.cloudfunctions.net/answer_generation_service
                       auth:
                         type: OIDC
-                        audience: https://us-central1-abhi-test-new-rp.cloudfunctions.net/answer_generation_service
+                        audience: https://europe-west2-abhi-test-new-rp.cloudfunctions.net/answer_generation_service
                       headers:
                         Content-Type: application/json
                       body: ${task}
@@ -96,10 +96,10 @@ main:
         try:
           call: http.post
           args:
-            url: https://us-central1-abhi-test-new-rp.cloudfunctions.net/answer_evaluation_service
+            url: https://europe-west2-abhi-test-new-rp.cloudfunctions.net/answer_evaluation_service
             auth:
               type: OIDC
-              audience: https://us-central1-abhi-test-new-rp.cloudfunctions.net/answer_evaluation_service
+              audience: https://europe-west2-abhi-test-new-rp.cloudfunctions.net/answer_evaluation_service
             headers:
               Content-Type: application/json
             body: ${aggregated_results}

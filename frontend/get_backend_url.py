@@ -21,7 +21,7 @@ def get_backend_url():
   client = run_v2.ServicesClient(credentials=credentials)
 
   # Construct the full resource name of the Cloud Run service
-  name = f"projects/{project}/locations/us-central1/services/backend-image"
+  name = f"projects/{project}/locations/europe-west2/services/backend-image"
 
   response = client.get_service(name=name)
   return response.uri

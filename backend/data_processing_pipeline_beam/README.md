@@ -37,7 +37,7 @@ Dataflow Template for large scale RAG document processing
 
     ```bash
     export PROJECT_ID=$(gcloud config get-value project)
-    export REGION=us-central1
+    export REGION=europe-west2
     export JOB_NAME=rag-playground-dataflow-pipeline-$(date +%Y%m%H%M$S)
 
     export INPUT_PUBSUB_SUBSCRIPTION=projects/{PROJECT_ID}/subscriptions/document-processing-input-sub
@@ -80,7 +80,7 @@ Dataflow Template for large scale RAG document processing
             "type": "vertex_ai",
             "config": {
                 "project_id": "PROJECT_ID",
-                "region": "us-central1",
+                "region": "europe-west2",
                 "index_id": "INDEX_ID",
                 "endpoint_id": "ENDPOINT_ID",
                 "embedding_model": "text-embedding-004",
@@ -117,7 +117,7 @@ Dataflow Template for large scale RAG document processing
         "type": "vertex_ai",
         "config": {
             "project_id": "PROJECT_ID",
-            "region": "us-central1",
+            "region": "europe-west2",
             "index_id": "INDEX_ID",
             "endpoint_id": "ENDPOINT_ID",
             "embedding_model": "text-embedding-004",

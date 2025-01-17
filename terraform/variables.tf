@@ -281,7 +281,7 @@ variable "cf-metadata" {
       timeout_seconds    = 60
       max_instance_request_concurrency = 1
       available_cpu = "1"
-      trigger_region = "us-central1"
+      trigger_region = "europe-west2"
       event_type     = "google.cloud.pubsub.topic.v1.messagePublished"
       retry_policy   = "RETRY_POLICY_RETRY"
       role         = "roles/cloudfunctions.invoker"

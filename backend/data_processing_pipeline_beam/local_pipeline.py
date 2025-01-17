@@ -81,7 +81,7 @@ def create_test_input():
               "type": "vertex_ai",
               "config": {
                   "project_id": "abhishekbhgwt-llm",
-                  "region": "us-central1",
+                  "region": "europe-west2",
                   "index_id": "7028698449302257664",
                   "endpoint_id": "6309811358783242240",
                   "embedding_model": "text-embedding-004",
