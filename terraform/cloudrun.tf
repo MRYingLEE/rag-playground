@@ -123,7 +123,7 @@ resource "google_cloud_run_service_iam_member" "public-access-backend" {
   project  = google_cloud_run_v2_service.backend.project
   service  = google_cloud_run_v2_service.backend.name
   role     = "roles/run.invoker"
-  member   = "allUsers"
+  member   = "group:esg@maplequad.com"
   depends_on = [docker_registry_image.backend]
 }
 
@@ -132,6 +132,6 @@ resource "google_cloud_run_service_iam_member" "public-access-frontend" {
   project  = google_cloud_run_v2_service.frontend.project 
   service  = google_cloud_run_v2_service.frontend.name
   role     = "roles/run.invoker"
-  member   = "allUsers"
+  member   = "group:esg@maplequad.com"
   depends_on = [docker_registry_image.frontend]
 }
