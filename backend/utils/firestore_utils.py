@@ -33,16 +33,40 @@ def get_config() -> Dict[str, Any]:
   Raises:
       Exception: If no config document is found in the database.
   """
-  doc_ref = db.collection("config").document("app_config")
-  doc = doc_ref.get()
-  if doc.exists:
-    logger.info("Retrieved configuration from Firestore")
-    return doc.to_dict()
-  else:
-    logger.error("No config document found in rp-config-db database")
-    raise Exception("No config document found in rp-config-db database!")
+  # doc_ref = db.collection("config").document("app_config")
+  # doc = doc_ref.get()
+  # if doc.exists:
+  #   logger.info("Retrieved configuration from Firestore")
+  #   return doc.to_dict()
+  # else:
+  #   logger.error("No config document found in rp-config-db database")
+  #   raise Exception("No config document found in rp-config-db database!")
 
-
+  # To solve a strange access rights issue, we fixed the parameters
+  dict2 = {
+    "backend": {
+        "prompt_template": "Answer the question based only on the following context: {context} Question: {query} Answer: "
+    },
+    "cloud_workflows": {
+        "location": "europe-west2",
+        "project_id": "esg-satelite",
+        "workflow_name": "rag-playground-backend-workflow"
+    },
+    "gcp_project": {
+        "location": "europe-west2",
+        "project_id": "esg-satelite"
+    },
+    "pubsub": {
+        "project_id": "esg-satelite",
+        "topic_id": "document-processing-input"
+    },
+    "vertex": {
+        "project_id": "esg-satelite",
+        "region": "europe-west2"
+    }
+  }
+  return dict2
+  
 def get_config_section(section: str) -> Dict[str, Any]:
   """Retrieve a specific section of the configuration.
 
